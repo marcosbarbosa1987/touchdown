@@ -29,6 +29,17 @@ struct HomeView: View {
                     
                     CategoryGridView()
                     
+                    TitleView(title: "Helmets")
+                    
+                    LazyVGrid(columns: gridLayout, alignment: .center, spacing: 15, pinnedViews: [], content: {
+                        ForEach(products) { product in
+                            ProductItemView(product: product)
+                        }//: Loop
+                    })//: LazyVGrid
+                    .padding(.horizontal, 15)
+                    
+                    BrandGridView()
+                    
                     FooterView()
                         .padding(.horizontal)
                 })//: ScrollView
