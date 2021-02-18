@@ -23,10 +23,13 @@ struct HomeView: View {
                     .background(Color.white)
                     .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
                 
-                Spacer()
-                
-                FooterView()
-                    .padding(.horizontal)
+                ScrollView(.vertical, showsIndicators: false, content: {
+                    FeatureTabView()
+                        .padding(.vertical, 20)
+                    
+                    FooterView()
+                        .padding(.horizontal)
+                })//: ScrollView
             }//: VStack
             .background(colorBackground.ignoresSafeArea(.all, edges: .all))
         }//: ZStack
