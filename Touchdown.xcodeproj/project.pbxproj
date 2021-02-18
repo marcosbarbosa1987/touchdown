@@ -19,6 +19,8 @@
 		CDA79C5225DE091C00570EE7 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA79C5125DE091C00570EE7 /* FooterView.swift */; };
 		CDA79C5625DE0BD400570EE7 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA79C5525DE0BD400570EE7 /* NavigationBarView.swift */; };
 		CDA79C5925DE0CD600570EE7 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA79C5825DE0CD600570EE7 /* LogoView.swift */; };
+		CDA79C5C25DEE6AF00570EE7 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA79C5B25DEE6AF00570EE7 /* PlayerModel.swift */; };
+		CDA79C5F25DEE6E200570EE7 /* CodableBundleExtension .swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA79C5E25DEE6E200570EE7 /* CodableBundleExtension .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		CDA79C5125DE091C00570EE7 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		CDA79C5525DE0BD400570EE7 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		CDA79C5825DE0CD600570EE7 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		CDA79C5B25DEE6AF00570EE7 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		CDA79C5E25DEE6E200570EE7 /* CodableBundleExtension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodableBundleExtension .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,7 @@
 		CDA79C4B25DE075D00570EE7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CDA79C5B25DEE6AF00570EE7 /* PlayerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 		CDA79C4C25DE076200570EE7 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CDA79C5E25DEE6E200570EE7 /* CodableBundleExtension .swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -231,11 +237,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDA79C2A25DE040C00570EE7 /* HomeView.swift in Sources */,
+				CDA79C5F25DEE6E200570EE7 /* CodableBundleExtension .swift in Sources */,
 				CDA79C5925DE0CD600570EE7 /* LogoView.swift in Sources */,
 				CDA79C5225DE091C00570EE7 /* FooterView.swift in Sources */,
 				CDA79C2825DE040C00570EE7 /* TouchdownApp.swift in Sources */,
 				CDA79C4F25DE078200570EE7 /* Constant.swift in Sources */,
 				CDA79C5625DE0BD400570EE7 /* NavigationBarView.swift in Sources */,
+				CDA79C5C25DEE6AF00570EE7 /* PlayerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
