@@ -11,10 +11,14 @@ struct AddToCardDetailView: View {
     
     // MARK: - Properties
     
+    @EnvironmentObject var shop: Shop
+    
     // MARK: - Body
     
     var body: some View {
-        Button(action: {}, label: {
+        Button(action: {
+            feedback.impactOccurred()
+        }, label: {
             Spacer()
             Text("Add to cart".uppercased())
                 .font(.system(.title2, design: .rounded))
@@ -24,7 +28,7 @@ struct AddToCardDetailView: View {
         })//: Button
         .padding(15)
         .background(
-            Color(red: sampleProduct.red, green: sampleProduct.green, blue: sampleProduct.blue)
+            Color(red: shop.selectedProduct?.red ?? 0.0, green: shop.selectedProduct?.green ?? 0.0, blue: shop.selectedProduct?.blue ?? 0.0)
         )
         .clipShape(Capsule())
     }
@@ -35,6 +39,7 @@ struct AddToCardDetailView: View {
 struct AddToCardDetailView_Previews: PreviewProvider {
     static var previews: some View {
         AddToCardDetailView()
+            .environmentObject(Shop())
             .previewLayout(.sizeThatFits)
             .padding()
     }

@@ -29,7 +29,9 @@ struct RatingsSizesDetailView: View {
                 
                 HStack(alignment: .center, spacing: 3, content: {
                     ForEach(1...5, id: \.self) { item in
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Button(action: {
+                            feedback.impactOccurred()
+                        }, label: {
                             Image(systemName: "star.fill")
                                 .frame(width: 28, height: 28, alignment: .center)
                                 .background(colorGray.cornerRadius(5))
@@ -52,7 +54,9 @@ struct RatingsSizesDetailView: View {
                 
                 HStack(alignment: .center, spacing: 5, content: {
                     ForEach(sizes, id: \.self) { size in
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Button(action: {
+                            feedback.impactOccurred()
+                        }, label: {
                             Text(size)
                                 .font(.footnote)
                                 .fontWeight(.heavy)
